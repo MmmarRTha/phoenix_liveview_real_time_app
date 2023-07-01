@@ -10,7 +10,7 @@ config :bcrypt_elixir, :log_rounds, 1
 # Run `mix help test` for more information.
 config :my_real_time_app, MyRealTimeApp.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "marthap0p",
   hostname: "localhost",
   database: "my_real_time_app_test#{System.get_env("MIX_TEST_PARTITION")}",
   pool: Ecto.Adapters.SQL.Sandbox,
