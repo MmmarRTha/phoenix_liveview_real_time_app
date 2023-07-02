@@ -10,6 +10,7 @@
 <.table
   id="posts"
   rows={@streams.posts}
+  phx-update="prepend"
   row_click={fn {_id, post} -> JS.navigate(~p"/posts/#{post}") end}
 >
   <:col :let={{_id, post}} label="Username"><%= post.username %></:col>
